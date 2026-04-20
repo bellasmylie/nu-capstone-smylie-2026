@@ -67,16 +67,16 @@ Modeling Approach
 
 Multiple models were used to analyze and predict demand trends:
 
-🔹 Linear Regression (Baseline)
+- Linear Regression (Baseline)
 Simple, interpretable model
 Used as a benchmark
-🔹 Logistic Growth Model
+- Logistic Growth Model
 Captures EV adoption curves
 Models acceleration and saturation behavior
-🔹 Prophet Time Series Model
+- Prophet Time Series Model
 Forecasts future demand
 Handles trend and time-based patterns
-🔹 Random Forest Regression
+- Random Forest Regression
 Captures non-linear relationships
 Identifies key drivers of EV demand
 
