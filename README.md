@@ -14,22 +14,6 @@ Research Question
 
 Should automotive manufacturers prioritize electric vehicles, hybrids, or internal combustion engines based on demand trends and predictive modeling?
 
-Repository Structure
-/data/
-    bts_vehicle_sales.csv
-    ev_adoption_kaggle.csv
-
-/notebooks/
-    1_data_preparation.ipynb
-    2_exploration.ipynb
-    3_modeling.ipynb
-    4_model_comparison.ipynb
-
-/results/
-    figures/
-    model_outputs/
-
-README.md
 Data Sources
 1. U.S. Bureau of Transportation Statistics (BTS)
 Source: https://www.bts.gov/content/gasoline-hybrid-and-electric-vehicle-sales
