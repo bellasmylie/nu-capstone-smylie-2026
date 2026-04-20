@@ -118,3 +118,9 @@ Incorporate pricing, fuel cost, and incentives
 Add consumer sentiment analysis
 Expand to global datasets
 Apply advanced machine learning models
+
+Clone this repository
+- Navigate to the /notebooks/ folder
+- Run all cells from top to bottom
+- Data is located in /data/
+- Final results appear in the last section of the notebook
