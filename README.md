@@ -31,38 +31,37 @@ Vehicle type
 Sales volume
 Data Preparation
 
-To ensure accuracy and consistency, the following steps were performed:
+Removed missing values
+Converted date fields to datetime
+Extracted time features (year, month)
+Standardized column formats
 
-Identified and removed missing values (.dropna())
-Converted columns to appropriate numeric formats
-Checked for duplicates and inconsistencies
-Standardized datasets for modeling
 Feature Engineering
 
-New variables were created to improve analysis:
+Feature Engineering
 
-numeric_total → total demand across vehicle types
-numeric_avg → average demand across variables
-high_flag → binary indicator (high vs. low demand based on median)
+The following features were created to improve model performance:
 
-These features simplified comparisons and improved model performance.
+revenue_per_unit → pricing efficiency
+demand_growth → demand trends over time
+lag_sales → previous demand (time-based feature)
+Brand_Code → encoded categorical variable
+Region_ variables* → one-hot encoded geographic indicators
 
 Modeling Approach
 
 Multiple models were used to analyze and predict demand trends:
 
-- Linear Regression (Baseline)
-Simple, interpretable model
-Used as a benchmark
-- Logistic Growth Model
-Captures EV adoption curves
-Models acceleration and saturation behavior
-- Prophet Time Series Model
-Forecasts future demand
-Handles trend and time-based patterns
-- Random Forest Regression
-Captures non-linear relationships
-Identifies key drivers of EV demand
+Two models were used to analyze EV demand:
+
+Linear Regression
+- Baseline model
+- Easy to interpret
+- Used for comparison
+Random Forest Regression
+- Captures non-linear relationships
+- Provides feature importance
+- Best performing model
 
 Model Comparison
 
@@ -70,38 +69,20 @@ Models were evaluated using:
 
 R² (Coefficient of Determination)
 MAE (Mean Absolute Error)
-RMSE (Root Mean Squared Error)
 
 Key Findings
-EV adoption is consistently increasing
-Growth is non-linear and accelerating
-Hybrid vehicles act as a transition technology
-ICE vehicles are expected to decline over time
-Overall demand remains stable but is shifting toward electrification
+EV Demand Drivers (Model Results)
+Battery capacity strongly influences demand
+Discounts and pricing impact sales
+Regional differences affect adoption
+Demand follows non-linear patterns
 
-
-Real-World Implications
-For Automotive Manufacturers:
-Increase investment in EV development
-Use hybrids as a short-term transition strategy
-Gradually reduce reliance on ICE vehicles
-
-For Industry Operations:
-Shift supply chains toward EV components
-Retrain workforce for EV systems
-Adapt dealership service models
 
 Limitations
 Limited historical data in BTS dataset
 Potential bias in Kaggle dataset
 Lack of real-time consumer preference data
 Simplified feature engineering
-
-Future Work
-Incorporate pricing, fuel cost, and incentives
-Add consumer sentiment analysis
-Expand to global datasets
-Apply advanced machine learning models
 
 Clone this repository
 - Navigate to the /notebooks/ folder
