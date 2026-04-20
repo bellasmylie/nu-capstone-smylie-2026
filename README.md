@@ -12,7 +12,7 @@ Goal: Provide data-driven insights to help automotive manufacturers determine wh
 
 Research Question
 
-Should automotive manufacturers prioritize electric vehicles, hybrids, or internal combustion engines based on demand trends and predictive modeling?
+Should automotive manufacturers prioritize electric vehicles, hybrids, or internal combustion engines based on demand trends and predictive modeling and in which region?
 
 Data Sources
 1. U.S. Bureau of Transportation Statistics (BTS)
