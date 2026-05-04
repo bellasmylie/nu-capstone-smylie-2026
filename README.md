@@ -1,13 +1,13 @@
 # nu-capstone-smylie-2026
 Automotive Demand and Adoption Analysis & Forecasting
 
-##Project Overview 
+# Project Overview 
 This project creates an analysis based on the adoption and demand trends for Electric (EV), Plug-in Hybrid Electric (PHEV), and Hybrid (HEV) powertrains. This analysis uses historical data and predictive modeling techniques that evaluates industry demand patterns. Forecasts were created to determine future growth to support manufacturing resources. 
 
-##Research Question
+# Research Question
 Which vehicle powertrain—electric, hybrid, or plug-in hybrid—should automotive manufacturers prioritize based on observed demand trends and predictive modeling, and which geographic region presents the greatest opportunity for growth?
 
-##Datasets Used
+# Datasets Used
 •	U.S. Bureau of Transportation Statistics Dataset (2010–2023) 
 o	Vehicle type sales data: 
 	Electric Vehicles (EV) 
@@ -20,8 +20,8 @@ o	Used to identify high-performing markets
 o	https://www.kaggle.com/datasets/rameezmeerasahib/electric-vehicle-ev-sales-and-adoption 
 
 
-##Methodology
-#Data Preparation
+# Methodology
+### Data Preparation
 •	Cleaned and formatted datasets 
 •	Converted year to proper format 
 •	Sorted data chronologically
@@ -30,51 +30,47 @@ o	https://www.kaggle.com/datasets/rameezmeerasahib/electric-vehicle-ev-sales-and
 •	Calculated growth rates 
 •	Generated future target variables
 
-##Models
-#Linear Regression (Baseline)
+# Models
+### Linear Regression (Baseline)
 •	Used to model basic relationship between time and sales 
 •	Assumes linear growth
-#Lag-Based Regression Model
+### Lag-Based Regression Model
 •	Inputs: 
 o	Previous year sales 
 o	Growth rate 
 •	Predicts future demand
-#Random Forest
+### Random Forest
 •	Tested for comparison 
 •	Limited effectiveness due to small dataset (BTS)
-#ARIMA (Primary Model)
+### ARIMA (Primary Model)
 •	Time-series forecasting model 
 •	Captures trends and temporal patterns 
 •	Used to forecast demand through 2030
 
-#Two models were used to analyze EV demand:
+## Two models were used to analyze EV demand:
 
-#Linear Regression
+### Linear Regression
 •	Baseline model
 •	Easy to interpret
 •	Used for comparison
-#Random Forest Regression
+### Random Forest Regression
 •	Captures non-linear relationships
 •	Provides feature importance
 •	Best performing model
-##Key Findings 
+
+# Key Findings 
 •	Electric Vehicle demand is increasing while Plug-in Hybrid and Hybrid vehicles are acting as intermediate solutions with transitional technology
 •	North America is the strongest region with the highest revenue and units sold, this is where manufacturers should be pushing more EV sales as it fits demand 
 •	Manufacturers should allocate resources and prioritize Electric vehicle powertrains in North America
 
-##Replication  
+# Replication  
 Step 1: Open notebook folder 
 Step 2: Open necessary ipynb file 
 Step 3: Run all cells from top to bottom
 Raw Data files will be found in (datasets): "BTS Data.csv", "EV Sales (test).csv", " EV Sales (train).csv"
 
-##Limitations
+# Limitations
 •	Small dataset (BTS Data) limited some predictive models
 •	Models provide future values based on captured trends
 •	External factors (government, economy, policies, etc.)
 
-##Clone this repository
-- Navigate to the /notebooks/ folder
-- Run all cells from top to bottom
-- Data is located in /data/
-- Final results appear in the last section of the notebook
