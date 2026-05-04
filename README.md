@@ -10,7 +10,7 @@ Which vehicle powertrain—electric, hybrid, or plug-in hybrid—should automoti
 
 # Datasets Used
 
-##	U.S. Bureau of Transportation Statistics Dataset (2010–2023) 
+### U.S. Bureau of Transportation Statistics Dataset (2010–2023) 
 
 o	Vehicle type sales data: 
 
@@ -22,7 +22,7 @@ o Plug-in Hybrid Electric Vehicles (PHEV)
 
 	https://www.bts.gov/content/gasoline-hybrid-and-electric-vehicle-sales
 
-## Test/Train Dataset 
+### Test/Train Dataset 
 
 o	Revenue and unit sales by region 
 
@@ -40,7 +40,7 @@ o	https://www.kaggle.com/datasets/rameezmeerasahib/electric-vehicle-ev-sales-and
 
 •	Sorted data chronologically
 
-#Feature Engineering
+### Feature Engineering
 
 •	Created lag variables (lag_1, lag_2) 
 
